@@ -4,6 +4,8 @@ import { Config } from '~/config'
 import AnalyticLayout from '~/layouts/AnalyticLayout'
 import DefaultLayout from '~/layouts/DefaultLayout'
 import { LayoutProps } from '~/layouts/layout.types'
+import HomeFindHelpSection from '~/partials/home/HomeFindHelpSection'
+import HomeHaveQuestionSection from '~/partials/home/HomeHaveQuestionSection'
 import HomeHeadSection from '~/partials/home/HomeHeadSection'
 
 type Props = LayoutProps
@@ -23,6 +25,8 @@ export default function Home({ ...layoutProps }: Props) {
     <AnalyticLayout>
       <DefaultLayout {...layoutProps} fillHeader={false}>
         <HomeHeadSection />
+        <HomeFindHelpSection />
+        <HomeHaveQuestionSection />
       </DefaultLayout>
     </AnalyticLayout>
   )
