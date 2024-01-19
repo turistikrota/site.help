@@ -9,6 +9,7 @@ export type RouteType = {
     default: string
   }
   aboutUs: string
+  contactUs: string
   base: string
   contracts: {
     terms: string
@@ -31,6 +32,7 @@ const Routes: Record<Locales, RouteType> = {
     },
     base: SiteUrls.root.tr,
     aboutUs: `${SiteUrls.root.tr}/hakkimizda`,
+    contactUs: `${SiteUrls.root.tr}/iletisim`,
     contracts: {
       terms: `${SiteUrls.root.tr}/sozlesmeler/kullanim-kosullari`,
       privacyNotify: `${SiteUrls.root.tr}/sozlesmeler/gizlilik-bildirimi`,
@@ -48,6 +50,7 @@ const Routes: Record<Locales, RouteType> = {
     },
     base: SiteUrls.root.en,
     aboutUs: `${SiteUrls.root.en}/about-us`,
+    contactUs: `${SiteUrls.root.en}/contact`,
     contracts: {
       terms: `${SiteUrls.root.en}/contracts/terms-of-use`,
       privacyNotify: `${SiteUrls.root.en}/contracts/privacy-notice`,
