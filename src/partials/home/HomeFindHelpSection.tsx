@@ -3,6 +3,7 @@ import LandingSection from '@turistikrota/ui/section/landing'
 import { Locales } from '@turistikrota/ui/types'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
+import { getStaticRoute } from '~/static/page'
 import { SiteUrls } from '~/static/site'
 
 type Item = {
@@ -16,13 +17,13 @@ const Items: Item[] = [
   {
     key: 'faq',
     bg: 'bg-secondary-300 dark:bg-secondary-700',
-    link: () => '/faq',
+    link: (locale) => getStaticRoute(locale).faqs,
     icon: <i className='bx bx-help-circle text-4xl text-secondary'></i>,
   },
   {
     key: 'guides',
     bg: 'bg-primary-300 dark:bg-primary-700',
-    link: () => '/guides',
+    link: (locale) => getStaticRoute(locale).guides,
     icon: <i className='bx bx-bookmark text-4xl text-primary'></i>,
   },
   {
