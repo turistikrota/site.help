@@ -1,7 +1,6 @@
 import { GetServerSideProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useRouter } from 'next/router'
 import GuideCard from '~/components/card/GuideCard'
 import NoResultsFound from '~/components/state/NoResultsFound'
 import { Config } from '~/config'
@@ -12,7 +11,6 @@ import { LayoutProps } from '~/layouts/layout.types'
 import HomeHaveQuestionSection from '~/partials/home/HomeHaveQuestionSection'
 import HomeHeadSection from '~/partials/home/HomeHeadSection'
 import GuideSeo from '~/partials/seo/GuideSeo'
-import { getStaticRoute } from '~/static/page'
 import { EmptyArticleMeta, EmptyCategoryMeta, GuideResponseItem } from '~/types/guide'
 import { httpClient } from '~/utils/http'
 import { getI18nTranslations } from '~/utils/i18n'
@@ -41,12 +39,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
 
 export default function GuidePage({ guides, ...layoutProps }: Props) {
   const { t, i18n } = useTranslation('common')
-  const router = useRouter()
-  const q = router.query.q
-
-  const resetQuery = () => {
-    router.push(getStaticRoute(i18n.language).guides)
-  }
   return (
     <AnalyticLayout>
       <GuideSeo />
