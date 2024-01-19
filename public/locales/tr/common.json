@@ -10,6 +10,11 @@
       "description": "Turistikrota Rehber & Destek sayfasına hoş geldiniz. Burada Turistikrota ile ilgili tüm sorularınızın cevaplarını bulabilirsiniz.",
       "keywords": "Turistikrota, yardım, destek, sıkça sorulan sorular, sss, soru, cevap, soru sor, destek talebi, rehber, yardım merkezi"
     },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "description": "Turistikrota Sıkça Sorulan Sorular sayfasına hoş geldiniz. Burada Turistikrota ile ilgili tüm sorularınızın cevaplarını bulabilirsiniz.",
+      "keywords": "Turistikrota, yardım, destek, sıkça sorulan sorular, sss, soru, cevap, soru sor, destek talebi, rehber, yardım merkezi"
+    },
     "detail": {
       "description": "Turistikrota Rehber & Destek sayfasına hoş geldiniz. Burada Turistikrota ile ilgili tüm sorularınızın cevaplarını bulabilirsiniz."
     }
@@ -17,6 +22,9 @@
   "guide": {
     "title": "Rehber & Destek",
     "emptyByCategory": "Bu kategoride rehber bulunamadı."
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular"
   },
   "header": {
     "links": {
@@ -61,6 +69,12 @@
         "button": "Soru Sor"
     }
   },
+  "footer": {
+    "terms": "Kullanım Koşulları",
+    "privacy-policy": "Gizlilik Politikası",
+    "cookies": "Çerezler",
+    "copyright": "Turistikrota. Tüm hakları saklıdır."
+},
   "notFoundPage": {
     "title": "Sayfa Bulunamadı",
     "subtitle": "Aradığınız sayfayı bulamadık. Lütfen girdiğiniz adresi kontrol edin.",
@@ -68,7 +82,7 @@
   },
   "notFound": {
     "title": "Sonuç Bulunamadı",
-    "description": "Filtrelerinizle eşleşen herhangi bir sonuç bulamadık.",
+    "description": "Herhangi bir sonuç bulamadık. Lütfen daha farklı bir arama yapın veya destek talebi oluşturun.",
     "button": "Filtreleri Sıfırla"
   },
   "url": "https://yardim.turistikrota.com"

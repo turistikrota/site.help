@@ -5,7 +5,7 @@ import { FC } from 'react'
 import { getStaticRoute } from '~/static/page'
 
 const MagicFooter: FC = () => {
-  const { t, i18n } = useTranslation('general')
+  const { t, i18n } = useTranslation('common')
   return (
     <Footer>
       <Footer.Copyright>

@@ -67,6 +67,9 @@ const Routes: Record<Locales, RouteType> = {
 }
 
 export const getStaticRoute = (locale: string) => {
+  if (!Routes[locale as Locales]) {
+    return Routes.tr
+  }
   return Routes[locale as Locales]
 }
 

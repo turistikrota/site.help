@@ -17,6 +17,7 @@ module.exports = withTouristicUI({
         164: '47rem',
         '70vh': '70vh',
         '30vh': '30vh',
+        '40vh': '40vh',
       },
       width: {
         75: '18.8125rem',

@@ -1,3 +1,5 @@
-import FaqPage from './faq'
+import FaqPage, { getServerSideProps } from './faq'
 
 export default FaqPage
+
+export { getServerSideProps }

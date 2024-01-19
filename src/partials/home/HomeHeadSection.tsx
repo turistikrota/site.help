@@ -24,7 +24,7 @@ export default function HomeHeadSection({ title, isDetail }: Props) {
 
   return (
     <section
-      className={`relative flex flex-col items-center justify-center gap-8 p-4 lg:p-0 ${isDetail ? 'h-30vh' : 'h-70vh'}`}
+      className={`relative flex flex-col items-center justify-center gap-8 p-4 lg:p-0 ${isDetail ? 'h-40vh' : 'h-70vh'}`}
     >
       <div
         className={`absolute left-0 top-0 h-full w-full bg-cover bg-fixed bg-center bg-no-repeat brightness-30 md:bg-center ${styles.banner}`}
