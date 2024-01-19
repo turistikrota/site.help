@@ -54,7 +54,7 @@ const Routes: Record<Locales, RouteType> = {
     },
     base: SiteUrls.root.en,
     guides: '/guide',
-    faqs: '/faqs',
+    faqs: '/faq',
     aboutUs: `${SiteUrls.root.en}/about-us`,
     contactUs: `${SiteUrls.root.en}/contact`,
     contracts: {
