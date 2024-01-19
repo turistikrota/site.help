@@ -4,6 +4,7 @@ export enum Sites {
   Account = 'account',
   Auth = 'auth',
   Root = 'root',
+  Support = 'support',
 }
 
 type SiteUrl = {
@@ -22,5 +23,9 @@ export const SiteUrls: Record<Sites, SiteUrl> = {
   [Sites.Root]: {
     tr: process.env.NEXT_PUBLIC_SITE_ROOT_TR_URL!,
     en: process.env.NEXT_PUBLIC_SITE_ROOT_EN_URL!,
+  },
+  [Sites.Support]: {
+    tr: process.env.NEXT_PUBLIC_SITE_SUPPORT_TR_URL!,
+    en: process.env.NEXT_PUBLIC_SITE_SUPPORT_EN_URL!,
   },
 }

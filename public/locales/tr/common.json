@@ -1,1 +1,63 @@
-{}
+{
+  "seo": {
+    "default": {
+      "title": "Yardım Merkezi",
+      "description": "Turistikrota Yardım Merkezi'ne hoş geldiniz. Burada Turistikrota ile ilgili tüm sorularınızın cevaplarını bulabilirsiniz.",
+      "keywords": "Turistikrota, yardım, destek, sıkça sorulan sorular, sss, soru, cevap, soru sor, destek talebi, rehber, yardım merkezi"
+    }
+  },
+  "header": {
+    "links": {
+      "aboutUs": "Hakkımızda",
+      "login": "Giriş Yap",
+      "selectAccount": "Profili Seç",
+      "home": "Turistikrota'ya Dön"
+    },
+    "button": {
+      "login": "Giriş Yap",
+      "select": "Profili Seç",
+      "profile": "Profil",
+      "loading": "Yükleniyor..."
+    }
+  },
+  "sections": {
+    "search": {
+        "title": "Size Nasıl Yardımcı Olabiliriz?",
+        "label": "Anahtar Kelime",
+        "button": "Ara"
+    },
+    "findHelp": {
+        "title": "İhtiyacınız Olan Yardımı Bulun",
+        "subtitle": "Özel olarak hazırlanmış içeriklerimizden yararlanın, daha önce sorulmuş soruları inceleyin veya bize sorun.",
+        "faq": {
+            "title": "SSS",
+            "text": "Sıkça sorulan soruları inceleyin, hızlıca cevap bulun."
+        },
+        "guides": {
+            "title": "Rehberler",
+            "text": "Hazır rehberlerimizi inceleyin ve neyi nasıl yapacağınızı öğrenin."
+        },
+        "support": {
+            "title": "Destek Talebi",
+            "text": "Eşsiz sorunlarınız için destek talebi oluşturun. En kısa sürede size dönüş yapacağız."
+        },
+        "link": "Daha Fazlası"
+    },
+    "haveQuestion": {
+        "title": "Sorunuz mu Var?",
+        "subtitle": "Bize sorun, size hızlıca yardımcı olalım.",
+        "button": "Soru Sor"
+    }
+  },
+  "notFoundPage": {
+    "title": "Sayfa Bulunamadı",
+    "subtitle": "Aradığınız sayfayı bulamadık. Lütfen girdiğiniz adresi kontrol edin.",
+    "button": "Anasayfaya Dön"
+  },
+  "notFound": {
+    "title": "Sonuç Bulunamadı",
+    "description": "Filtrelerinizle eşleşen herhangi bir sonuç bulamadık.",
+    "button": "Filtreleri Sıfırla"
+  },
+  "url": "https://yardim.turistikrota.com"
+}

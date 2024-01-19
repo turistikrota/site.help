@@ -1,12 +1,14 @@
 import DefaultCard from '@turistikrota/ui/cards/default'
 import LandingSection from '@turistikrota/ui/section/landing'
+import { Locales } from '@turistikrota/ui/types'
+import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
-import { useTranslation } from 'react-i18next'
+import { SiteUrls } from '~/static/site'
 
 type Item = {
   key: string
   bg: string
-  link: string
+  link: (locale: Locales) => string
   icon: React.ReactNode
 }
 
@@ -14,25 +16,25 @@ const Items: Item[] = [
   {
     key: 'faq',
     bg: 'bg-secondary-300 dark:bg-secondary-700',
-    link: '/faq',
+    link: () => '/faq',
     icon: <i className='bx bx-help-circle text-4xl text-secondary'></i>,
   },
   {
     key: 'guides',
     bg: 'bg-primary-300 dark:bg-primary-700',
-    link: '/guides',
+    link: () => '/guides',
     icon: <i className='bx bx-bookmark text-4xl text-primary'></i>,
   },
   {
     key: 'support',
     bg: 'bg-fuchsia-300 dark:bg-fuchsia-700',
-    link: '/',
+    link: (locale) => SiteUrls.support[locale],
     icon: <i className='bx bx-cog text-fuchsia text-4xl'></i>,
   },
 ]
 
 export default function HomeFindHelpSection() {
-  const { t } = useTranslation('common')
+  const { t, i18n } = useTranslation('common')
   return (
     <LandingSection>
       <LandingSection.Head title={t('sections.findHelp.title')} subtitle={t('sections.findHelp.subtitle')} />
@@ -45,13 +47,13 @@ export default function HomeFindHelpSection() {
               {item.icon}
             </div>
             <h4 className='mb-2 mt-5 text-lg font-medium'>{t(`sections.findHelp.${item.key}.title`)}</h4>
-            <p className='text-slate-500 dark:text-slate-400'>{t(`sections.findHelp.${item.key}.text`)}</p>
+            <p className='text-center text-slate-500 dark:text-slate-400'>{t(`sections.findHelp.${item.key}.text`)}</p>
             <Link
-              href={item.link}
+              href={item.link(i18n.language as Locales)}
               className='mt-2 flex items-center justify-center text-primary-500 dark:text-primary-400'
             >
               {t('sections.findHelp.link')}
-              <i className='bx bx-chevron-right text-3xl'></i>
+              <i className='bx bx-chevron-right text-2xl'></i>
             </Link>
           </DefaultCard>
         ))}

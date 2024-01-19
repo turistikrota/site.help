@@ -7,6 +7,7 @@ import { LayoutProps } from '~/layouts/layout.types'
 import HomeFindHelpSection from '~/partials/home/HomeFindHelpSection'
 import HomeHaveQuestionSection from '~/partials/home/HomeHaveQuestionSection'
 import HomeHeadSection from '~/partials/home/HomeHeadSection'
+import DefaultSeo from '~/partials/seo/DefaultSeo'
 
 type Props = LayoutProps
 
@@ -23,6 +24,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
 export default function Home({ ...layoutProps }: Props) {
   return (
     <AnalyticLayout>
+      <DefaultSeo />
       <DefaultLayout {...layoutProps} fillHeader={false}>
         <HomeHeadSection />
         <HomeFindHelpSection />

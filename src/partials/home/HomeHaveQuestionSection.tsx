@@ -1,7 +1,7 @@
 import Button from '@turistikrota/ui/button'
 import LandingSection from '@turistikrota/ui/section/landing'
+import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
-import { useTranslation } from 'react-i18next'
 import { getStaticRoute } from '~/static/page'
 
 export default function HomeHaveQuestionSection() {
