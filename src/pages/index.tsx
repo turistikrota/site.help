@@ -4,6 +4,7 @@ import { Config } from '~/config'
 import AnalyticLayout from '~/layouts/AnalyticLayout'
 import DefaultLayout from '~/layouts/DefaultLayout'
 import { LayoutProps } from '~/layouts/layout.types'
+import HomeHeadSection from '~/partials/home/HomeHeadSection'
 
 type Props = LayoutProps
 
@@ -20,7 +21,9 @@ export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
 export default function Home({ ...layoutProps }: Props) {
   return (
     <AnalyticLayout>
-      <DefaultLayout {...layoutProps}>heyyo</DefaultLayout>
+      <DefaultLayout {...layoutProps} fillHeader={false}>
+        <HomeHeadSection />
+      </DefaultLayout>
     </AnalyticLayout>
   )
 }

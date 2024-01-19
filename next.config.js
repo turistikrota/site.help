@@ -9,9 +9,6 @@ const nextConfig = {
     domains: ['s3.turistikrota.com', 'avatar.turistikrota.com'],
   },
   i18n: i18n,
-  experimental: {
-    esmExternals: 'loose',
-  },
 }
 
 module.exports = nextConfig

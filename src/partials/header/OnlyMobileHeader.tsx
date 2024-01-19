@@ -9,13 +9,14 @@ import { getStaticRoute } from '~/static/page'
 
 type Props = {
   accessTokenIsExists: boolean
+  fillHeader?: boolean
 }
 
 const AccountHeaderButton = dynamic(() => import('./AccountHeaderButton'), {
   ssr: false,
 })
 
-export default function OnlyMobileHeader({ accessTokenIsExists }: Props) {
+export default function OnlyMobileHeader({ accessTokenIsExists, fillHeader }: Props) {
   const { t, i18n } = useTranslation('common')
   return (
     <>
@@ -38,7 +39,7 @@ export default function OnlyMobileHeader({ accessTokenIsExists }: Props) {
         </TopHeader.Right>
       </TopHeader>
 
-      <MobileHeader withTopHeader>
+      <MobileHeader withTopHeader fillSize={fillHeader}>
         <MobileHeader.Left>
           <HeaderLogo>
             <Logo width={186} height={30} />
