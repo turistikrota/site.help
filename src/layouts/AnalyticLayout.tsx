@@ -5,13 +5,13 @@ import { FC, PropsWithChildren } from 'react'
 const TurkishAnalytics: FC = () => {
   return (
     <>
-      <Script src='https://www.googletagmanager.com/gtag/js?id=G-2NMFRCYRF2' strategy='afterInteractive'></Script>
+      <Script src='https://www.googletagmanager.com/gtag/js?id=G-BHB7K11HSS' strategy='afterInteractive'></Script>
       <Script id='google-tag' strategy='afterInteractive'>
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-2NMFRCYRF2');
+        gtag('config', 'G-BHB7K11HSS');
       `}
       </Script>
     </>
@@ -21,13 +21,13 @@ const TurkishAnalytics: FC = () => {
 const EnglishAnalytics: FC = () => {
   return (
     <>
-      <Script src='https://www.googletagmanager.com/gtag/js?id=G-Q7YKQ763VG' strategy='afterInteractive'></Script>
+      <Script src='https://www.googletagmanager.com/gtag/js?id=G-JS351XR926' strategy='afterInteractive'></Script>
       <Script id='google-tag' strategy='afterInteractive'>
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-Q7YKQ763VG');
+        gtag('config', 'G-JS351XR926');
         `}
       </Script>
     </>
