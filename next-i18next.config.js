@@ -4,13 +4,13 @@ const i18n = {
   locales: ['en', 'tr'],
   domains: [
     {
-      domain: 'listing.turistikrota.com',
+      domain: 'help.turistikrota.com',
       defaultLocale: 'en',
       http: true,
       locales: ['en'],
     },
     {
-      domain: 'ilan.turistikrota.com',
+      domain: 'yardim.turistikrota.com',
       defaultLocale: 'tr',
       http: true,
       locales: ['tr'],
